@@ -37,7 +37,7 @@ jobs:
       - name: cleanup
         run: |
             rm -r downloads
-            mv -v out/ ..
+            mv -v out/* ../
 
       - name: Commit changes
         uses: elstudio/actions-js-build/commit@v3
