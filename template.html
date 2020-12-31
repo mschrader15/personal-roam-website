@@ -8,26 +8,30 @@
         <title>${PAGE_NAME}</title>
     </head>
     <body>
-        <header>
-            <a class="logo" href="/">
-                <img src="assets/logo.svg" alt="Max Schrader logo"/>
-            </a>
-            <nav class="nav">
-                <ul class="list list--nav">
-                    <li class="item  item--nav">
-                        <a href="Who_am_I.html">About</a>
-                    </li>
-                    <li class="item  item--nav  item--current">
-                        <a href=".html">Writings</a>
-                    </li>
-                </ul>
-            </nav>
+        <header class="header">
+            <div class="container">
+                <a class="logo" href="/">
+                    <img src="assets/logo.svg" alt="Max Schrader logo"/>
+                </a>
+                <nav class="nav">
+                    <ul class="list list--nav">
+                        <li class="item  item--nav">
+                            <a href="Who_am_I.html">About</a>
+                        </li>
+                        <li class="item  item--nav  item--current">
+                            <a href=".html">Writings</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-
-        <section class="main">
-            <article>
+        <main class="main  container">
+            <div class="content">
                 ${PAGE_CONTENT}
-            </article>
-        </section>
+            </div>
+<!--            <article>-->
+<!--                -->
+<!--            </article>-->
+        </main>
     </body>
 </html>
