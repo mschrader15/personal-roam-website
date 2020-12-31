@@ -37,7 +37,6 @@ jobs:
       - name: cleanup
         run: |
             PATH=pwd
-            ls
             rm -r downloads
             mv -v out/* $PATH/
             cd /github/workspace
