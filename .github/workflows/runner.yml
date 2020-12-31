@@ -36,8 +36,12 @@ jobs:
 
       - name: cleanup
         run: |
+            pwd
+            ls
             rm -r downloads
             mv -v out/* ../
+            cd /github/workspace
+            ls
 
       - name: Commit changes
         uses: elstudio/actions-js-build/commit@v3
