@@ -243,13 +243,13 @@ iframe {
     filter: grayscale(1)
 }
 
-[data-page="Website Index"] img {
+[data-page="Website Homepage"] img {
     max-width: 200px;
     display: block;
     margin: 0 auto
 }
 
-[data-title="Website Index"],
+[data-title="Website Homepage"],
 [data-title=x220] {
     display: none
 }
