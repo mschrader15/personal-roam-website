@@ -243,3 +243,12 @@ footer {
 	font-family: 'Degular Text';
 	text-align: right
 }
+
+.logo {
+	display: inline-block;
+	line-height: 0;
+	border-radius: 100%;
+	overflow: hidden;
+	width: 4rem;
+	height: 4rem;
+}
