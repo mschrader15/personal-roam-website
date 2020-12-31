@@ -1,4 +1,26 @@
-/*! Typebase.less v0.1.0 | MIT License */
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700");
+
+@font-face {
+    font-family: '"Alegreya Sans", sans-serif';
+    cap-height: 0.66;
+}
+
+@font-face {
+    font-family: '"Neuton", serif';
+    cap-height: 0.66
+}
+
+@font-face {
+    font-family: 'Menlo, monospace';
+    cap-height: 0.68
+}
+
+:root{
+    --background-color: #EDEAE5;
+    --main-font: "Alegreya Sans", sans-serif;
+    --secondary-font: "Neuton", serif;
+    --third-font: "Menlo", monospace;
+}
 
 html {
     font-family: serif;
@@ -101,31 +123,21 @@ code {
     margin-top: 0
 }
 
-@media (prefers-color-scheme:dark) {
-    html {
-        filter: invert(.8)
-    }
-    img {
-        opacity: .5;
-        transition: opacity .5s ease-in-out
-    }
-    img:hover {
-        opacity: 1
-    }
-}
-
-/*@font-face {*/
-/*    font-family: "Degular Text";*/
-/*    src: url(/38005a0e1a43b06eef1577a2d442f1086f4db156/16f7e/degular_text-regular.woff2) format('woff2')*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: "Degular Display";*/
-/*    src: url(/c78e0022c7b9a1373508d621eea86e37a76a5c73/6799e/degular_display-black.woff2) format('woff2')*/
+/*@media (prefers-color-scheme:dark) {*/
+/*    html {*/
+/*        filter: invert(.8)*/
+/*    }*/
+/*    img {*/
+/*        opacity: .5;*/
+/*        transition: opacity .5s ease-in-out*/
+/*    }*/
+/*    img:hover {*/
+/*        opacity: 1*/
+/*    }*/
 /*}*/
 
 body {
-    background-color: #fdfcfb;
+    background-color: var(--background-color);
     color: #3a3a3a!important
 }
 
@@ -164,15 +176,15 @@ h3,
 h4,
 h5,
 h6 {
-    color: rgba(0, 0, 0, .45);
-    font-family: "Degular Display"
+    color: rgba(0, 0, 0);
+    font-family: var(--main-font)
 }
 
 h1 {
     font-size: 2.142rem;
     line-height: 2.8rem;
     margin-top: 1.5rem;
-    font-family: "Degular Display"
+    font-family: var(--main-font)
 }
 
 h2 {
@@ -198,15 +210,20 @@ img {
     opacity: .8
 }
 
-li,
+li{
+    font-family: var(--main-font);
+}
+
 p {
-    font-family: "Degular Text", serif
+
 }
 
 ul>li {
     list-style: none;
     line-height: 1.5rem;
-    margin: 20px 0
+    margin: 20px 0;
+    text-decoration: none;
+    font-family: var(--third-font);
 }
 
 ul>li>ul {
@@ -216,7 +233,9 @@ ul>li>ul {
 ul>li>ul>li {
     line-height: 1.5rem;
     margin-top: 20px;
-    list-style: none
+    list-style: none;
+    font-family: var(--secondary-font);
+    text-decoration: none;
 }
 
 .gist,
@@ -240,7 +259,7 @@ footer {
     margin-top: 40px;
     padding: 20px 0 40px 0;
     font-size: 14px;
-    font-family: 'Degular Text';
+    font-family: var(--secondary-font);
     text-align: right
 }
 
