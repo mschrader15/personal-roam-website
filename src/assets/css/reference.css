@@ -123,40 +123,10 @@ code {
     margin-top: 0
 }
 
-/*@media (prefers-color-scheme:dark) {*/
-/*    html {*/
-/*        filter: invert(.8)*/
-/*    }*/
-/*    img {*/
-/*        opacity: .5;*/
-/*        transition: opacity .5s ease-in-out*/
-/*    }*/
-/*    img:hover {*/
-/*        opacity: 1*/
-/*    }*/
-/*}*/
-
 body {
     background-color: var(--background-color);
     color: #3a3a3a!important
 }
-
-/*header {*/
-/*    border-bottom: 1px solid rgba(0, 0, 0, .05)*/
-/*}*/
-
-/*header>a {*/
-/*    text-decoration: none*/
-/*}*/
-
-/*header>a>h1 {*/
-/*    font-size: .75rem;*/
-/*    line-height: 3rem;*/
-/*    margin: 0;*/
-/*    margin-bottom: -.5rem;*/
-/*    font-family: 'Degular Text';*/
-/*    font-weight: 400*/
-/*}*/
 
 a {
     color: #000
@@ -274,8 +244,13 @@ footer {
 
 .header{
     display: flex;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid rgba(0, 0, 0, .20);
 }
+
+header>a {
+    text-decoration: none
+}
+
 
 .container {
     width: 90%;
