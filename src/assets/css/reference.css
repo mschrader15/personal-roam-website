@@ -20,6 +20,7 @@
     --main-font: "Alegreya Sans", sans-serif;
     --secondary-font: "Neuton", serif;
     --third-font: "Menlo", monospace;
+    --border-style: 2px solid rgba(0, 0, 0, .20);
 }
 
 html {
@@ -29,9 +30,14 @@ html {
 }
 
 p {
-    line-height: 1.5rem;
+    /*line-height: 1.5rem;*/
     margin-top: 1.5rem;
-    margin-bottom: 0
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: -0.2px;
+    text-align: left;
 }
 
 ol,
@@ -129,7 +135,13 @@ body {
 }
 
 a {
-    color: #000
+    text-decoration: none !important;
+    color: inherit;
+    border-bottom: 2px solid rgb(94, 92, 112);
+}
+
+a:hover {
+    border-bottom: 2px solid rgb(159, 156, 201);
 }
 
 pre {
@@ -224,6 +236,13 @@ iframe {
     display: none
 }
 
+.article[data-page="CV"]>ul>li{
+    list-style: none;
+    line-height: 0.5rem;
+    text-decoration: none;
+    font-family: var(--third-font);
+}
+
 footer {
     border-top: 1px solid rgba(0, 0, 0, .05);
     margin-top: 40px;
@@ -259,8 +278,8 @@ header>a {
 }
 
 .logo img {
-    width: 4rem;
-    height: 4rem;
+    width: 2.75rem;
+    height: 2.75rem;
 }
 
 img {
@@ -276,11 +295,13 @@ nav {
 }
 
 .list--nav{
+    margin-top: 0;
     margin-bottom: 0;
 }
 
 .item--nav {
     display: inline-block;
-    border-left: 2px solid #000;
+    border-left: var(--border-style);
     padding: 0.5rem 1rem;
+    font-size: 75%;
 }
