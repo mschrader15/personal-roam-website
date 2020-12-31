@@ -114,15 +114,15 @@ code {
     }
 }
 
-@font-face {
-    font-family: "Degular Text";
-    src: url(/38005a0e1a43b06eef1577a2d442f1086f4db156/16f7e/degular_text-regular.woff2) format('woff2')
-}
+/*@font-face {*/
+/*    font-family: "Degular Text";*/
+/*    src: url(/38005a0e1a43b06eef1577a2d442f1086f4db156/16f7e/degular_text-regular.woff2) format('woff2')*/
+/*}*/
 
-@font-face {
-    font-family: "Degular Display";
-    src: url(/c78e0022c7b9a1373508d621eea86e37a76a5c73/6799e/degular_display-black.woff2) format('woff2')
-}
+/*@font-face {*/
+/*    font-family: "Degular Display";*/
+/*    src: url(/c78e0022c7b9a1373508d621eea86e37a76a5c73/6799e/degular_display-black.woff2) format('woff2')*/
+/*}*/
 
 body {
     background-color: #fdfcfb;
