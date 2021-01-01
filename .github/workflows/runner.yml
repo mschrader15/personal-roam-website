@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Generate HTML From Roam
-        uses: mschrader15/generate-roam-site-action@1.8.4.1
+        uses: mschrader15/generate-roam-site-action@1.8.5
         with:
           roam_username: ${{ secrets.ROAMRESEARCH_USER }}
           roam_password: ${{ secrets.ROAMRESEARCH_PASSWORD }}
