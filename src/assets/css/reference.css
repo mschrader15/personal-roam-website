@@ -53,29 +53,6 @@ blockquote {
     margin-bottom: 1.5rem
 }
 
-/* h2,
-h3,
-h4,
-h5,
-h6 {
-    color: rgba(0, 0, 0);
-    font-family: var(--main-font)
-}
-
-h1 {
-    font-size: 2.142rem;
-    line-height: 2.8rem;
-    margin-top: 1.5rem;
-    font-family: var(--main-font)
-}
-
-h2 {
-    font-size: 1.828rem;
-    line-height: 2rem;
-    margin-top: 2rem;
-    font-weight: 700
-} */
-
 h1 {
     font-size: 2.142rem;
     line-height: 2.8rem;
@@ -223,8 +200,11 @@ iframe {
     padding-bottom: 10px;
 }
 
-[data-page="CV"] ul>li>ul>li>ul>li>ul{
-    list-style-type: circle;
+[data-page="CV"] ul>li>ul>li>ul>li>{
+    list-style: circle outside none;
+    text-decoration: none;
+    display: list-item;
+    margin: none;
 }
 
 footer {
