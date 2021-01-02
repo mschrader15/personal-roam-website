@@ -181,7 +181,8 @@ article,
 footer,
 header {
     max-width: 850px;
-    margin: 0 auto
+    margin: 0 auto;
+    position: relative
 }
 
 img {
@@ -304,4 +305,18 @@ nav {
     border-left: var(--border-style);
     padding: 0.5rem 1rem;
     font-size: 75%;
+}
+
+h1[data-title='*'] {
+    font-size: 2.142rem;
+    line-height: 2.8rem;
+    font-family: var(--main-font);
+    position: absolute;
+    left: calc(-1* (2.142rem + 2.8rem) - 1rem);
+    border-bottom: var(--border-style);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(-90deg);
 }
