@@ -291,15 +291,15 @@ h1[data-title] {
     line-height: 2.8rem;
     font-family: var(--main-font);
     position: absolute;
-    left: calc(-1* (2.142rem + 2.8rem) - 1rem);
+    left: calc(-3.3* (2.142rem + 2.8rem) - 1rem);
     border-bottom: var(--border-style);
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    margin-top: 20px;
-    margin-bottom: 0;
+    transform-origin: right top;
+    margin: 0;
 }
 
 .item--nav a{
