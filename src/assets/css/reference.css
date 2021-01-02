@@ -7,7 +7,7 @@
     --third-font: "Menlo", monospace;
     --border-style: 2px solid rgba(0, 0, 0, .40);
     --border-style-hover: 3px solid rgba(0, 0, 0, .60);
-    --max-width: 850px;
+    --max-width: 950px;
 }
 
 html {
@@ -148,6 +148,10 @@ header {
     position: relative
 }
 
+.article {
+    overflow-y: scroll;
+}
+
 img {
     width: 100%;
     display: block;
@@ -185,6 +189,11 @@ iframe {
     display: block;
     margin: 0 auto
 }
+
+article[data-page="Website Homepage"]>ul {
+    margin-top: 1.5rem !important;
+}
+
 
 [data-title="Website Homepage"],
 [data-title=x220] {
@@ -240,6 +249,10 @@ footer {
 .header {
     display: flex;
     border-bottom: var(--border-style);
+    flex-shrink: 0;
+    /* display: inline-flex; */
+    /* position: fixed;
+    overflow: hidden; */
 }
 
 header>a {
@@ -287,11 +300,9 @@ img {
     font-size: 100%;
 }
 
-h2[data-title] {
-    border-top: var(--border-style);
-    position: absolute;
-    top: -175px;
-    left: 12px;
+div[data-title] {
+    position: sticky;
+    top: 80px;
     background: none;
     -webkit-transform-origin: 0;
     -moz-transform-origin: 0 0;
@@ -301,9 +312,25 @@ h2[data-title] {
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    width: 50%;
+    width: calc(0.5 * var(--max-width));
     min-width: calc(var(--max-width) *0.5);
     text-align: center;
+}
+
+h2[data-title] {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    border-bottom: var(--border-style);
+    text-align: center;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: -68px
+}
+
+article[data-page] > ul {
+    margin-top: -4.5rem;
 }
 
 .item--nav a{
@@ -313,4 +340,17 @@ h2[data-title] {
 .item--nav a:hover{
     border: none;
     font-weight: bold;
+}
+
+.side-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 60%;
+    max-width: 500px;
+    min-height: 60%;
+    max-height: 300px;
 }
