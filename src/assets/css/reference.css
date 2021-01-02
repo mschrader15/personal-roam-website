@@ -5,13 +5,15 @@
     --main-font: "Alegreya Sans", sans-serif;
     --secondary-font: "Neuton", serif;
     --third-font: "Menlo", monospace;
-    --border-style: 2px solid rgba(0, 0, 0, .20);
+    --border-style: 2px solid rgba(0, 0, 0, .40);
+    --border-style-hover: 3px solid rgba(0, 0, 0, .60);
 }
 
 html {
-    font-family: serif;
-    font-size: 137.5%;
-    -webkit-font-smoothing: antialiased
+    font-family: var(--third-font);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    transition: ease-in-out;
 }
 
 p {
@@ -150,14 +152,14 @@ a:hover {
 
 pre {
     background: #f3f3f3;
-    padding: 15px
+    padding: 15px;
+    white-space: pre-wrap;
 }
+
 
 code {
     background: #f3f3f3
 }
-
-
 
 .main,
 article,
@@ -210,11 +212,19 @@ iframe {
     display: none
 }
 
-.article[data-page="CV"]>ul>li{
+[data-page="CV"] ul>li>ul>li>ul{
     list-style: none;
     line-height: 0.5rem;
     text-decoration: none;
     font-family: var(--third-font);
+    background-color: #f3f3f3;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+[data-page="CV"] ul>li>ul>li>ul>li>ul{
+    list-style-type: circle;
 }
 
 footer {
@@ -248,14 +258,13 @@ header>a {
 .container {
     width: 90%;
     max-width: 900px;
-    margin: 0 auto;
 }
 
 .logo img {
     width: 2.75rem;
     height: 2.75rem;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    /* margin-top: 20px;
+    margin-bottom: 0px; */
 }
 
 .logo {
@@ -279,9 +288,13 @@ img {
     display: inline-block;
     border-left: var(--border-style);
     padding: 0.5rem 1rem;
-    font-size: 75%;
+    font-size: 100%;
     margin-top: 20px;
     margin-bottom: 0px;
+}
+
+.item--nav:hover{
+    border-left: var(--border-style-hover);
 }
 
 .item--nav a{
@@ -290,4 +303,5 @@ img {
 
 .item--nav a:hover{
     border: none;
+    font-size: 110%;
 }
