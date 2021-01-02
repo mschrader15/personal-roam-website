@@ -283,7 +283,7 @@ img {
     display: inline-block;
     border-left: var(--border-style);
     padding: 0.5rem 1rem;
-    font-size: 75%;
+    font-size: 100%;
 }
 
 h1[data-title] {
