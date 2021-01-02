@@ -198,14 +198,24 @@ iframe {
     padding-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin: 0;
 }
 
-[data-page="CV"] ul>li>ul>li>ul>li>{
-    list-style: circle outside none;
+[data-page="CV"] ul>li>ul>li>ul>li{
+    /* list-style: circle outside url('../dash.svg'); */
     text-decoration: none;
     display: list-item;
-    margin: none;
+    margin: 0;
 }
+
+
+[data-page="CV"] ul>li>ul>li>ul>li>ul>li::before{
+    content: "–"; /* en dash */
+    position: absolute;
+    margin-left: -1.1em; 
+}
+
+
 
 footer {
     border-top: 1px solid rgba(0, 0, 0, .05);
@@ -247,6 +257,10 @@ header>a {
     margin-bottom: 0px; */
 }
 
+.logo:hover {
+    border: none !important;
+}
+
 .logo {
     border: none;
 }
@@ -273,15 +287,11 @@ img {
     margin-bottom: 0px;
 }
 
-.item--nav:hover{
-    border-left: var(--border-style-hover);
-}
-
 .item--nav a{
     border: none;
 }
 
 .item--nav a:hover{
     border: none;
-    font-size: 110%;
+    font-weight: bold;
 }
