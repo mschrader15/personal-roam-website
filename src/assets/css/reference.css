@@ -7,6 +7,7 @@
     --third-font: "Menlo", monospace;
     --border-style: 2px solid rgba(0, 0, 0, .40);
     --border-style-hover: 3px solid rgba(0, 0, 0, .60);
+    --max-width: 850px;
 }
 
 html {
@@ -142,7 +143,7 @@ code {
 article,
 footer,
 header {
-    max-width: 850px;
+    max-width: var(--max-width);
     margin: 0 auto;
     position: relative
 }
@@ -286,18 +287,23 @@ img {
     font-size: 100%;
 }
 
-h1[data-title] {
-    font-size: 2.142rem;
-    line-height: 2.8rem;
-    font-family: var(--main-font);
-    border-bottom: var(--border-style);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    transform-origin: right top;
-    margin: 0;
+h2[data-title] {
+    border-top: var(--border-style);
+    position: absolute;
+    top: -175px;
+    left: 12px;
+    background: none;
+    -webkit-transform-origin: 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    width: 50%;
+    min-width: calc(var(--max-width) *0.5);
+    text-align: center;
 }
 
 .item--nav a{
