@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/reference.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Max's Notes</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <a class="logo" href="/">
+            <img src="assets/logo.svg" alt="Max Schrader logo"/>
+        </a>
+        <nav class="nav">
+            <ul class="list list--nav">
+                <li class="item  item--nav">
+                    <a href="Who_am_I.html">About</a>
+                </li>
+                <li class="item  item--nav  item--current">
+                    <a href="/">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="main">
+    <article data-page="Stoic Clock">
+        <h1 data-title="Stoic Clock">
+            Stoic Clock
+        </h1>
+        <p>Parts list (incomplete, see Instructables for more, affiliate links):</p>
+<p>Aliexpress:</p>
+<p>4x IN-14 Nixie tube: <a href="https://www.youtube.com/redirect?v=ObgmVNV1Kfg&amp;event=video_description&amp;q=https%3A%2F%2Fs.click.aliexpress.com%2Fe%2F_dYxadSB&amp;redir_token=u3WREO80ZDO9l0DSxHjRhNf8u3N8MTU4OTMyODE5NEAxNTg5MjQxNzk0">https://s.click.aliexpress.com/e/_dYx...</a></p>
+<p>4x K155ID1 Nixie tube driver: <a href="https://www.youtube.com/redirect?v=ObgmVNV1Kfg&amp;event=video_description&amp;q=https%3A%2F%2Fs.click.aliexpress.com%2Fe%2F_dZ02DLv&amp;redir_token=u3WREO80ZDO9l0DSxHjRhNf8u3N8MTU4OTMyODE5NEAxNTg5MjQxNzk0">https://s.click.aliexpress.com/e/_dZ0...</a></p>
+<p>1x LM7805 5V regulator: <a href="https://www.youtube.com/redirect?v=ObgmVNV1Kfg&amp;event=video_description&amp;q=https%3A%2F%2Fs.click.aliexpress.com%2Fe%2F_dTT11Yx&amp;redir_token=u3WREO80ZDO9l0DSxHjRhNf8u3N8MTU4OTMyODE5NEAxNTg5MjQxNzk0">https://s.click.aliexpress.com/e/_dTT...</a></p>
+<p>1x Arduino Pro Mini: <a href="https://www.youtube.com/redirect?v=ObgmVNV1Kfg&amp;event=video_description&amp;q=https%3A%2F%2Fs.click.aliexpress.com%2Fe%2F_dWjf2yn&amp;redir_token=u3WREO80ZDO9l0DSxHjRhNf8u3N8MTU4OTMyODE5NEAxNTg5MjQxNzk0">https://s.click.aliexpress.com/e/_dWj...</a></p>
+<p>1x DS1307 RTC: <a href="https://www.youtube.com/redirect?v=ObgmVNV1Kfg&amp;event=video_description&amp;q=https%3A%2F%2Fs.click.aliexpress.com%2Fe%2F_d6iyPCF&amp;redir_token=u3WREO80ZDO9l0DSxHjRhNf8u3N8MTU4OTMyODE5NEAxNTg5MjQxNzk0">https://s.click.aliexpress.com/e/_d6i...</a></p>
+<p>SMD Capacitors (1206 10uF, 100nF): <a href="https://www.youtube.com/redirect?v=ObgmVNV1Kfg&amp;event=video_description&amp;q=https%3A%2F%2Fs.click.aliexpress.com%2Fe%2F_dSt10Z1&amp;redir_token=u3WREO80ZDO9l0DSxHjRhNf8u3N8MTU4OTMyODE5NEAxNTg5MjQxNzk0">https://s.click.aliexpress.com/e/_dSt...</a></p>
+<p>Male+Female Header: <a href="https://www.youtube.com/redirect?v=ObgmVNV1Kfg&amp;event=video_description&amp;q=https%3A%2F%2Fs.click.aliexpress.com%2Fe%2F_d8CsUsJ&amp;redir_token=u3WREO80ZDO9l0DSxHjRhNf8u3N8MTU4OTMyODE5NEAxNTg5MjQxNzk0">https://s.click.aliexpress.com/e/_d8C...</a></p>
+<p>4x 10kΩ Resistor: <a href="https://www.youtube.com/redirect?v=ObgmVNV1Kfg&amp;event=video_description&amp;q=https%3A%2F%2Fs.click.aliexpress.com%2Fe%2F_dVrRxir&amp;redir_token=u3WREO80ZDO9l0DSxHjRhNf8u3N8MTU4OTMyODE5NEAxNTg5MjQxNzk0">https://s.click.aliexpress.com/e/_dVr...</a></p>
+<p>1x 170V DC Supply: <a href="https://www.youtube.com/redirect?v=ObgmVNV1Kfg&amp;event=video_description&amp;q=https%3A%2F%2Fs.click.aliexpress.com%2Fe%2F_dTNNUVZ&amp;redir_token=u3WREO80ZDO9l0DSxHjRhNf8u3N8MTU4OTMyODE5NEAxNTg5MjQxNzk0">https://s.click.aliexpress.com/e/_dTN...</a></p>
+<p>1x DC Input Jack: <a href="https://www.youtube.com/redirect?v=ObgmVNV1Kfg&amp;event=video_description&amp;q=https%3A%2F%2Fs.click.aliexpress.com%2Fe%2F_Bf7oDayn&amp;redir_token=u3WREO80ZDO9l0DSxHjRhNf8u3N8MTU4OTMyODE5NEAxNTg5MjQxNzk0">https://s.click.aliexpress.com/e/_Bf7...</a>
+        - Need driver ics. specifically 
+    - Use Easy EDE software to create the PCBs and electrical schematics
+    - The ground copper layer clearance needs to be increased to support the voltage
+    - Need a solder gun
+    - Pin 11 of an arduino mini cannot handle the voltage required to drive the IC. Hook up a pull down resistor
+    - ## Power Supply
+        - sits on its own 
+        - Bought &quot;cheap-o&quot; one
+        - Should probably upgrade to something like:
+            - <a href="https://www.tindie.com/products/tonyp7/170v-high-voltage-nixie-power-supply/">https://www.tindie.com/products/tonyp7/170v-high-voltage-nixie-power-supply/</a>
+    - ## Micro-controller
+        - orderd rasberry pi.
+        - could get from <a href="https://www.microcenter.com/product/486575/Zero_W?src=raspberrypi">https://www.microcenter.com/product/486575/Zero_W?src=raspberrypi</a>
+    - # Rasperry Pi Code/Setup
+        - user: stoicclock
+        - userPassword: papertowelPhone
+        - ### Security
+            - <a href="https://www.raspberrypi.org/documentation/configuration/security.md">https://www.raspberrypi.org/documentation/configuration/security.md</a>
+            - <a href="https://www.raspberrypi.org/documentation/remote-access/ssh/Passwordless.md#copy-your-public-key-to-your-raspberry-pi">https://www.raspberrypi.org/documentation/remote-access/ssh/Passwordless.md#copy-your-public-key-to-your-raspberry-pi</a>
+        - ### Real Time Clock:
+            - <a href="https://www.raspberrypi.org/forums/viewtopic.php?t=178763">https://www.raspberrypi.org/forums/viewtopic.php?t=178763</a>
+        - ### Configuring Python 3
+            - <a href="https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi/configure-your-pi">https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi/configure-your-pi</a>
+        - ### Bluetooth/Wifi
+            - <a href="https://github.com/nymea/berrylan">https://github.com/nymea/berrylan</a>
+            - Beautiful!!!!!!!
+            - Installed following the manual options and works!
+            - <a href="https://www.raspberrypi.org/forums/viewtopic.php?t=164522">https://www.raspberrypi.org/forums/viewtopic.php?t=164522</a>
+        - ### Working Headless:
+            - <a href="https://dev.to/vorillaz/headless-raspberry-pi-zero-w-setup-3llj">https://dev.to/vorillaz/headless-raspberry-pi-zero-w-setup-3llj</a>
+        - ### Start-up Scripts with Order and Latching:
+            - <a href="https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup/all">https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup/all</a>
+                - Part 3
+        - ### Get the current time:
+            - </p>
+<pre><code>                import os
+                import ntplib
+                client = ntplib.NTPClient()
+                response = client.request(&#39;pool.ntp.org&#39;)
+                print(time.ctime(response.tx_time))
+                Thu May 21 21:52:43 2020`
+- # Website/Database
+    - Need to create a website to interface to 
+        - needs a sign-up link and account generation
+        - after the account is generated, enter your date-of-birth and your expected death age.
+        - The arduino will pull from this to generate the day count down  
+    - https://www.simbla.com/database-createdatabase
+- # Datasheets
+    - K155ID1
+        - https://tubehobby.com/datasheets/k155id1.pdf
+- # BOM
+    - ### Nixie Tubes:
+        - {{DONE}} Bought
+        - 6x IN-14 Nixie Tubes - $74.27
+    - ### 170V DC Supply:
+        - [amazon link](https://www.amazon.com/dp/B07HJX9761/ref=sspa_dk_detail_1?psc=1&amp;pd_rd_i=B07HJX9761&amp;pd_rd_w=gPSq0&amp;pf_rd_p=48d372c1-f7e1-4b8b-9d02-4bd86f5158c5&amp;pd_rd_wg=15vYt&amp;pf_rd_r=N7691W6F811WN4VKHD31&amp;pd_rd_r=cc113c9c-6d51-4ea6-93d7-f23f67c6774a&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExRDJSRjNVWUpJT0xTJmVuY3J5cHRlZElkPUEwMDQyNzcwMjRYUEpQUE5HNzMxNCZlbmNyeXB0ZWRBZElkPUEwMDA1MTczMlA5RktCWFFPMlU1NiZ3aWRnZXROYW1lPXNwX2RldGFpbCZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=)
+        -  </code></pre>
+<ul>
+<li><h2 id="what-is-it">What is it?</h2>
+<ul>
+<li><img src="https://github.com/mschrader15/stoic-clock/raw/master/assets/clock_pic.jpg" alt="image"></li>
+<li></li>
+</ul>
+</li>
+</ul>
+
+    </article>
+</section>
+
+</body>
+</html>
