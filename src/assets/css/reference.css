@@ -342,15 +342,8 @@ article[data-page] > ul {
     font-weight: bold;
 }
 
-.side-content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.graph-container {
+    max-width: calc(var(--max-width) - 50px);
+    height: 80vh;
     margin: auto;
-    min-width: 60%;
-    max-width: 500px;
-    min-height: 60%;
-    max-height: 300px;
-}
+  }
