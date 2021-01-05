@@ -317,7 +317,7 @@ div[data-title] {
     text-align: center;
 }
 
-h2[data-title] {
+h3[data-title] {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -347,3 +347,7 @@ article[data-page] > ul {
     height: 80vh;
     margin: auto;
   }
+
+  @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+}
