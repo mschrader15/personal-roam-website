@@ -61,17 +61,22 @@ blockquote {
 }
 
 h1 {
-    font-size: 2.142rem;
-    line-height: 2.8rem;
-    margin-top: 1.5rem;
-    font-family: var(--main-font)
+    font-size: 22px;    
+    text-align: left;
+    color: rgb(23, 25, 28);
+    margin: 4px 0px 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-decoration: none;
 }
 
 h2 {
-    font-size: 1.828rem;
-    line-height: 2rem;
-    margin-top: 2rem;
-    font-weight: 700
+    font-size: 18px;
+    text-align: left;
+    color: rgb(23, 25, 28);
+    margin: 0.1em 0px 0.4em;
+    font-weight: 700;
+    line-height: 1.55;
 }
 
 h3 {
