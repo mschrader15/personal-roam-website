@@ -17,6 +17,12 @@ html {
     transition: ease-in-out;
 }
 
+.rm-highlight {
+  background-color: hsl(51, 98%, 81%);
+  margin: -2px;
+  padding: 2px;
+}
+
 p {
     /*line-height: 1.5rem;*/
     font-size: 16px;
