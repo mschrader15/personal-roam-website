@@ -51,9 +51,9 @@
 <li>Type:: Academic Journal Academic Article</li>
 <li><h2 id="quotes">Quotes::</h2>
 <ul>
-<li>&quot;Therefore, techniques on data collection, transmission, storage, and mining have a huge impact on the prediction methodologies (Ran et al., 2012). Recent development in those domains have introduced the notion of big data to transportation research (Zheng et al., 2016, Jin et al., 2013); big data brings us unprecedented opportunities for achieving prediction with utmost accuracy, and it also sets new demand to reform the traffic flow prediction modeling strategies.&quot;</li>
-<li>&quot;It is not an easy task to develop a <a href="https://www.sciencedirect.com/topics/computer-science/deep-learning-model">deep learning model</a> that efficiently capture the characteristics of traffic flow.&quot;</li>
-<li>&quot;In the transportation field, data-driven methods especially the neural network approach have long been criticized for its explain-ability. Neural network has long been regarded as a “black box” because it is difficult to understand due to the large number of neurons, complicated structures, and non-linear function (<a href="https://www.sciencedirect.com/science/article/pii/S0968090X18302651?via%3Dihub#b0090">Karlaftis and Vlahogianni, 2011</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0968090X18302651?via%3Dihub#b0120">Lippi et al., 2013</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0968090X18302651?via%3Dihub#b0320">Zhang et al., 2014</a>).&quot;</li>
+<li>Therefore, techniques on data collection, transmission, storage, and mining have a huge impact on the prediction methodologies (Ran et al., 2012). Recent development in those domains have introduced the notion of big data to transportation research (Zheng et al., 2016, Jin et al., 2013); big data brings us unprecedented opportunities for achieving prediction with utmost accuracy, and it also sets new demand to reform the traffic flow prediction modeling strategies.</li>
+<li>It is not an easy task to develop a <a href="https://www.sciencedirect.com/topics/computer-science/deep-learning-model">deep learning model</a> that efficiently capture the characteristics of traffic flow.</li>
+<li>In the transportation field, data-driven methods especially the neural network approach have long been criticized for its explain-ability. Neural network has long been regarded as a “black box” because it is difficult to understand due to the large number of neurons, complicated structures, and non-linear function (<a href="https://www.sciencedirect.com/science/article/pii/S0968090X18302651?via%3Dihub#b0090">Karlaftis and Vlahogianni, 2011</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0968090X18302651?via%3Dihub#b0120">Lippi et al., 2013</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0968090X18302651?via%3Dihub#b0320">Zhang et al., 2014</a>).</li>
 </ul>
 </li>
 <li><h2 id="notes">Notes::</h2>
@@ -62,28 +62,43 @@
 <li>Making estimations of the future state based on expereinces and knowledge extracted from related historical data</li>
 </ul>
 </li>
-<li>The historical data matters the most. Recent advances in traffic data acquisition technology has given researchers a <strong>traffic data flood</strong>. </li>
+<li>The historical data matters the most. Recent advances in traffic data acquisition technology has given researchers a <em>traffic data flood</em>. </li>
 <li>At the time of the articles publishing, there was work in using neural networks for traffic forecasting,  but the authors raise the concern of traffic flow being complicated, with plentiful characteristics in both space and time dimensions. <ul>
-<li>&quot;&quot;It is not an easy task to develop a <a href="https://www.sciencedirect.com/topics/computer-science/deep-learning-model">deep learning model</a> that efficiently capture the characteristics of traffic flow.&quot;&quot;</li>
+<li>&quot;It is not an easy task to develop a <a href="https://www.sciencedirect.com/topics/computer-science/deep-learning-model">deep learning model</a> that efficiently capture the characteristics of traffic flow.&quot;</li>
 </ul>
 </li>
-<li>The more critical question in addition to <strong>how to model</strong> is <strong>how to understand the data-driven prediction methods</strong><ul>
-<li>&quot;&quot;In the transportation field, data-driven methods especially the neural network approach have long been criticized for its explain-ability. Neural network has long been regarded as a “black box” because it is difficult to understand due to the large number of neurons, complicated structures, and non-linear function (<a href="https://www.sciencedirect.com/science/article/pii/S0968090X18302651?via%3Dihub#b0090">Karlaftis and Vlahogianni, 2011</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0968090X18302651?via%3Dihub#b0120">Lippi et al., 2013</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0968090X18302651?via%3Dihub#b0320">Zhang et al., 2014</a>).&quot;&quot;</li>
+<li>The more critical question in addition to how to model is <span class="rm-highlight">how to understand the data-driven prediction methods</span><ul>
+<li>&quot;In the transportation field, data-driven methods especially the neural network approach have long been criticized for its explain-ability. Neural network has long been regarded as a “black box” because it is difficult to understand due to the large number of neurons, complicated structures, and non-linear function (<a href="https://www.sciencedirect.com/science/article/pii/S0968090X18302651?via%3Dihub#b0090">Karlaftis and Vlahogianni, 2011</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0968090X18302651?via%3Dihub#b0120">Lippi et al., 2013</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0968090X18302651?via%3Dihub#b0320">Zhang et al., 2014</a>).&quot;</li>
 </ul>
 </li>
 <li><h3 id="whats-new-about-this-paper">What&#39;s new about this paper?</h3>
 <ul>
 <li>The authors transition to using two different neural networks: <ul>
 <li>A deep convolutional neural network is used for the spatial features of the network</li>
-<li>recurrent neural netwoks were used for the temporal data<ul>
-<li>the time horizon was up to a coupe days  and </li>
+<li>Recurrent neural netwoks were used for the temporal data<ul>
+<li>The time horizon was up recent horizon plus similar intervals of the previous day and previous week</li>
+</ul>
+</li>
+<li>Speed data was used to train an &quot;attention model&quot; to deal with the level of importance of recent traffic</li>
+<li>The proposed model was evaluated on the prediction of future traffic flow on a long future horizon <ul>
+<li>45 </li>
+</ul>
+</li>
+<li>They also analyzed the inner workings of the trained neural network.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>neural networks handle non-linearities well, as well as approximating unknown functions. It is natural to apply it to traffic prediction</li>
+<li>&quot;Plain&quot; neural networks suffer from their shallow-ness in the traffic space, where the input data is &quot;deep&quot;<ul>
+<li>deep neural networks to the rescue!</li>
+</ul>
+</li>
+<li>Traffic flow is similar to video and audio in that is has characteristics in both the space and time domainds<ul>
+<li>traffic flow patterns at one location are more likely to be similar to another location</li>
+</ul>
+</li>
 <li></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 <li><h2 id="summary">Summary::</h2>
