@@ -10,11 +10,14 @@
     --max-width: 950px;
 }
 
-html {
+html, p {
     font-family: var(--third-font);
-    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     transition: ease-in-out;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: -0.2px;
 }
 
 .rm-highlight {
@@ -23,8 +26,7 @@ html {
   padding: 2px;
 }
 
-p {
-    /*line-height: 1.5rem;*/
+/* p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.75;
@@ -33,7 +35,8 @@ p {
     font-family: var(--main-font);
     font-size: 16px;
     margin: 0.3em 0px 1.15em
-}
+} 
+*/
 
 ol,
 ul {
