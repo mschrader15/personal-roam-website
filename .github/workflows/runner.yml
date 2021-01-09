@@ -23,11 +23,20 @@ jobs:
     timeout-minutes: 15
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      
+      # Gets the most recent release of a repository
+      - id: keydb
+        uses: pozetroninc/github-action-get-latest-release@master
+        with:
+          owner: dvargas92495
+          repo: generate-roam-site-action
+          excludes: prerelease, draft
+    
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
       - name: Generate HTML From Roam
-        uses: dvargas92495/generate-roam-site-action@latest
+        uses: dvargas92495/generate-roam-site-action@${{ steps.keydb.outputs.release }}
         with:
           roam_username: ${{ secrets.ROAMRESEARCH_USER }}
           roam_password: ${{ secrets.ROAMRESEARCH_PASSWORD }}
