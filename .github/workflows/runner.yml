@@ -36,7 +36,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Generate HTML From Roam
-        uses: dvargas92495/generate-roam-site-action@${{ steps.keydb.outputs.release }}
+        uses: dvargas92495/generate-roam-site-action@${{ keydb.outputs.release }}
         with:
           roam_username: ${{ secrets.ROAMRESEARCH_USER }}
           roam_password: ${{ secrets.ROAMRESEARCH_PASSWORD }}
