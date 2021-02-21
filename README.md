@@ -97,6 +97,7 @@ The secrets should correspond to the three inputs explained [here](https://githu
 
 ## Step 3 - Creating your Github Action
 
+Github Actions allow    
 
 
 
