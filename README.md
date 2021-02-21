@@ -81,4 +81,4 @@ In summary:
 
 Next, it is important to understand the per-page configuration, outlined [here](https://github.com/dvargas92495/generate-roam-site#per-page-configuration). As an example, here is a my **Personal Projects** page. Including [[Blog Post]] on the page means that it will be converted to HTML, per my **Filter** setting. 
 
-![](/img/)
+![](/my_projects.png)
