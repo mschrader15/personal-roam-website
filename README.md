@@ -91,12 +91,11 @@ There are different ways to use [generate-roam-site](https://github.com/dvargas9
 
 Once a repository for your site has been created, you need to add 3 different Github secrets. The process is explained in the [Github docs](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
 
-The secrets should correspond to the three inputs explained [here](https://github.com/dvargas92495/generate-roam-site-action#inputs). I went with the all-caps naming convention, so if you want to copy my Github Action 1:1 (Step 3) you will need to do the same. See below for my secrets
+The secrets should correspond to the three inputs explained [here](https://github.com/dvargas92495/generate-roam-site-action#inputs). I went with the all-caps naming convention, so if you want to copy my Github Action 1:1 ([Step 3](https://github.com/mschrader15/personal-roam-website/blob/main/README.md#step-3---creating-your-github-action)) you will need to do the same. See below for my secrets
 
 ![](/secrets.png)
 
 ## Step 3 - Creating your Github Action
-
 
 
 
