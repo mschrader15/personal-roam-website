@@ -35,7 +35,6 @@ jobs:
 
       - name: cleanup
         run: |
-            rm -r downloads
             mv -v out/* $GITHUB_WORKSPACE/src/
             cd $GITHUB_WORKSPACE
 
