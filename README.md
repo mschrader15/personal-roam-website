@@ -79,6 +79,19 @@ In summary:
 
 ```
 
-Next, it is important to understand the per-page configuration, outlined [here](https://github.com/dvargas92495/generate-roam-site#per-page-configuration). As an example, here is a my **Personal Projects** page. Including [[Blog Post]] on the page means that it will be converted to HTML, per my **Filter** setting. 
+Next, it is important to understand the per-page configuration, outlined [here](https://github.com/dvargas92495/generate-roam-site#per-page-configuration). 
+
+As an example, here is a my **Personal Projects** page. Including [[Blog Post]] on the page means that it will be converted to HTML, per my **Filter** setting. I can include a query under the [[roam/js/static-site/ignore]], and it won't render on the website.
 
 ![](/my_projects.png)
+
+## Step 2 - Creating a Repository for your Personal Website and adding the Github Secrets required
+
+There are different ways to use [generate-roam-site](https://github.com/dvargas92495/generate-roam-site), but if you want to use Netlify to host your site (what I am doing), you need to create a Github repository for your site. Once integrated, Netflify will then automatically build your site on any push to the linked repository. 
+
+Once a repository for your site has been created, you need to add 3 different Github secrets. The process is explained in the [Github docs](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
+
+The secrets should correspond to the three inputs explained [here](https://github.com/dvargas92495/generate-roam-site-action#inputs). I went with the all-caps naming convention, so if you want to copy my Github Action 1:1 (Step 3) you will need to do the same:
+### ``
+
+
