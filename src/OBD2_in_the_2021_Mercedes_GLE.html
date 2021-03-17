@@ -48,54 +48,36 @@
 </header>
 
 <section class="main">
-    <article data-page="Website Homepage">
-        <div data-title="Website Homepage">
-            <h2 data-title="Website Homepage">
-                Website Homepage
+    <article data-page="OBD2 in the 2021 Mercedes GLE">
+        <div data-title="OBD2 in the 2021 Mercedes GLE">
+            <h2 data-title="OBD2 in the 2021 Mercedes GLE">
+                OBD2 in the 2021 Mercedes GLE
             </h2>
         </div>
-        <ul><li><p>Hello there 👋, welcome to my site (WIP,  using it to test <a href="https://github.com/dvargas92495">dvargas92495</a>/<a href="https://github.com/dvargas92495/generate-roam-site-action">generate-roam-site-action</a>)</p>
+        <ul><li><p>As part of my Research at the University of Alabama, we intend to 
+use a V167 (GLE350) to test CV2X and traffic light optimization. </p>
 
 </li$>
-<li><h2 id="about-me">About Me</h2>
-
-<ul><li><p><a href="/Who_am_I.html">Who am I</a> </p>
+<li><p>We intend to log simple vehicle information via the OBD2 CAN bus, and so planned on using a <a href="https://canable.io/">CANable</a> and open-source python libraries (<a href="https://github.com/eerimoq/cantools">cantools</a> &amp; <a href="https://github.com/hardbyte/python-can">python-can</a>) to write a simple logging script. </p>
 
 </li$>
-<li><p><a href="/CV.html">CV</a> of sorts, work in progress with Roam formatting</p>
+<li><h1 id="lessons-learned">Lessons Learned</h1>
 
-</li$></ul></li$>
-<li><h2 id="about-maxs-notes">About Max&#39;s Notes</h2>
-
-<ul><li><p>This site is generated from <a href="/Roam_Research.html">Roam Research</a> exports. All of the page content is written inside of Roam, and the Github action <a href="https://github.com/dvargas92495/generate-roam-site-action">generate-roam-site-action</a> converts the Roam export to HTML. </p>
-
-<ul><li><p>You can find out more about the site @ <a href="/about_this_website.html">about this website</a></p>
-
-</li$></ul></li$>
-<li><p>Check out <a href="graph.html">the graph</a>!</p>
-
-</li$></ul></li$>
-<li><h2 id="posts">Posts</h2>
-
-<ul><li><p><a href="/OBD2_in_the_2021_Mercedes_GLE.html">OBD2 in the 2021 Mercedes GLE</a></p>
+<ul><li><p>This script worked great on a 2015 VW Jetta, but moving to the V167, we have had no luck. It simply didn&#39;t respond to the standard <code>0x7DF</code> OBD2 message. I saw lots of bus traffic, but none that correspond to the OBD2 standard message IDs. I was stumped.</p>
 
 </li$>
-<li><p>Transportation Article Reviews</p>
+<li><p>Then I stumbled on <a href="https://community.carloop.io/t/handling-29-bit-extended-format/239/23">this forum question about 29 bit ID&#39;s</a>. I remembered seeing some extended CAN ID&#39;s on the bus, and decided to give it a go.</p>
 
 </li$>
-<li><p><a href="/My_Projects.html">My Projects</a></p>
+<li><p>In extended CAN, the OBD2 request message id is <code>0x18DB33F1</code>, which works! </p>
 
 </li$>
-<li><p><a href="/Stoic_Clock.html">Stoic Clock</a></p>
-
-</li$>
-<li><p><span class="rm-highlight">Highlighted</span>, <span class="rm-bold">Bold</span>, ~~strikethrough~~, <em class="rm-italics">italics</em></p>
-
+<li>
 </li$></ul></li$></ul>
     </article>
   	<div id="references">
       <ul>
-        
+        <li><a href="index.html">Website Homepage</a></li>
       </ul>
     </div>
 </section>
