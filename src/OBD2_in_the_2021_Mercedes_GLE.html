@@ -70,11 +70,11 @@ table {
 <li id="xB7BAcYqu"><p>We intend to log simple vehicle information via the OBD2 CAN bus, and so planned on using a <a href="https://canable.io/">CANable</a> and open-source python libraries (<a href="https://github.com/eerimoq/cantools">cantools</a> & <a href="https://github.com/hardbyte/python-can">python-can</a>) to write a simple logging script. </p>
 </li>
 <li id="nrtmDYeAi"><h1>Lessons Learned</h1>
-<ul><li id="DlQCBIs7m"><p>This script worked great on a 2015 VW Jetta, but moving to the V167, we have had no luck. It simply didn&#39;t respond to the standard <code>0x7DF</code> OBD2 message. I saw lots of bus traffic, but none that correspond to the OBD2 standard message IDs. I was stumped.</p>
+<ul><li id="DlQCBIs7m"><p>This script worked great on a 2015 VW Jetta, but moving to the V167, we have had no luck. It simply didn&#39;t respond to the standard <code>`0x7DF`</code> OBD2 message. I saw lots of bus traffic, but none that correspond to the OBD2 standard message IDs. I was stumped.</p>
 </li>
 <li id="lcLjT1osP"><p>Then I stumbled on <a href="https://community.carloop.io/t/handling-29-bit-extended-format/239/23">this forum question about 29 bit ID&#39;s</a>. I remembered seeing some extended CAN ID&#39;s on the bus, and decided to give it a go.</p>
 </li>
-<li id="pMyf-h0ve"><p>In extended CAN, the OBD2 request message id is <code>0x18DB33F1</code>, which works! </p>
+<li id="pMyf-h0ve"><p>In extended CAN, the OBD2 request message id is <code>`0x18DB33F1`</code>, which works! </p>
 </li>
 <li id="QE9pso6qw"><p></p>
 </li></ul></li></ul>
