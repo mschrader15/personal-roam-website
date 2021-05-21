@@ -74,8 +74,6 @@ table {
 </li>
 <li id="4K1cjRDaG"><p>The environment model is a SUMO model of three intersections in Northport, Alabama. The three intersections serve industrial, commercial (Walmart, Lowes) and residential areas, respectively. The traffic in the simulation has been carefully calibrated to match real-world traffic as close as possible. Calibration is done by aggregated detector counts (stored in a SQL server) and deriving traffic routes that satisfy the counts most closely. To benchmark the RL-controlled traffic signals, the simulation will be run with the lights behaving exactly the way that they did on any given day.</p>
 </li></ul></li>
-<li id="HmK1k8-39"><h1>Final Report</h1>
-</li>
 <li id="OE8tY0i9f"><h2>Procedure</h2>
 <ul><li id="_xmNFyjzi"><p>The process of training a reinforcement learning (RL) agent to control three traffic signals can be divided into four major parts: <span class="rm-bold">creating a SUMO network</span>, <span class="rm-bold">generating traffic demand</span> and <span class="rm-bold">following traffic signal states,</span> <span class="rm-bold">creating an environment for the RL algorithm,</span> and <span class="rm-bold">training the RL algorithm</span>. The first two were completed prior to the start of this project, but a brief overview will be presented below.
 </p>
@@ -155,9 +153,7 @@ table {
 <li id="W5bL9-amJ"><p>One clear conclusion of this project was that ES is at the very least a more forgiving reinforcement-learning framework. By simply copying the hyperparameters used in the Flow benchmarks, a solution was converged upon. With PPO, there was no such luck. That being said, more RL algorithms should be trialed with various hyper parameters before concluding that ES is the definitive way forward.</p>
 </li>
 <li id="taoF-nijR"><p>Not presented in the results was an attempt at transfer learning, where ANN trained in Figure 2 over the 7:30 – 7:45 time interval was transferred to 17:30 - 17:45 and trained for another 500 iterations. The final solution was converged upon in very few iterations and mirrored the results from training the RL agent on the 17:30 - 17:45 interval from scratch. It would be interesting to investigate transfer learning on the network further, as it could potentially save considerable computation time vs. training on longer time intervals. SUMO slows down significantly when traffic congestion increases, which happens in early RL training iterations. Longer simulations mean more congestion, so if transfer learning could be used instead, that would likely be more computationally efficient.</p>
-</li></ul></li>
-<li id="aITRpI7TV"><p></p>
-</li></ul>
+</li></ul></li></ul>
     </article>
   	<div id="references">
       <ul>
