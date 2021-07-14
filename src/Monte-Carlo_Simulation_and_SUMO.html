@@ -14,6 +14,15 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>Max's Notes</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4SD0Y769WT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4SD0Y769WT');
+    </script>
 <style>
 .rm-highlight {
   background-color: hsl(51, 98%, 81%);
@@ -72,11 +81,37 @@ table {
 <ul><li id="nlkWUBnyP"><p>[[Traffic]] Simulation has <span class="rm-bold">a lot</span> of uncertainty. The goal is to model the collective behavior of thousands of vehicles. Each vehicle has its own car-following model and lane-changing model (each of which is inherently under-constrained).  </p>
 <ul><li id="2x-hJKkgd"><p>The difference between each <span class="rm-bold">actual</span> driver and the <span class="rm-bold">simulated</span> driver is error, but to know each individuals&#39; driving characteristics in the population would be impossible.      </p>
 </li></ul></li>
-<li id="vmqbgXTeH"><p>In fact, there is both the [[aleatory]] [[uncertainty]] and [[epistemic]] [[uncertainty]] components:</p>
+<li id="vmqbgXTeH"><p>In fact, there is both the [[aleatory]] [[uncertainty]] and [[epistemic]] [[uncertainty]] components</p>
+<ul><li id="CB4prjXSM"><p>This figure from 1 is a great visual representation of the sources of uncertainty</p>
 <ul><li id="lzwwTAenf"><p>((02kog6vh2))</p>
-</li></ul></li></ul></li>
+</li></ul></li></ul></li></ul></li>
 <li id="Ke6x5xxq4"><h2>The How</h2>
-</li></ul>
+<ul><li id="OfIGluQEe"><h2>Low-Discrepancy Monte-Carlo</h2>
+<ul><li id="o1cjSLvjd"><p>From 1:</p>
+<ul><li id="9gtVl66de"><p>> ((vNVF_vwfV))</p>
+</li></ul></li>
+<li id="Fc10dmpJU"><p><span class="rm-bold">So we move forward with Sobol&#39;s Sequence</span></p>
+</li>
+<li id="au7aG4t4s"><p></p>
+</li></ul></li>
+<li id="quqPZHmQ7"><h3>Monte-Carlo + Python</h3>
+</li>
+<li id="FqiZiQlWB"><h3>The Structure</h3>
+<ul><li id="cXEAcKoY8"><p>Define the sources of [[aleatory]] [[uncertainty]]</p>
+<ul><li id="U3ZmVuGWM"><p>In our case we have have a couple knowns. Every other parameter is unknown and should be considered unknown aka aleatory</p>
+<ul><li id="GJVIwMy5V"><p>Parametric Inputs</p>
+<ul><li id="c0Q44HtQu"><p>car-following model</p>
+</li>
+<li id="wDBajH1nv"><p>lane-changing model</p>
+</li></ul></li>
+<li id="ySyRCXpIo"><p>Non-parametric</p>
+<ul><li id="QKv-RPUWZ"><p>O-D Data</p>
+</li></ul></li>
+<li id="bpmE0UoSU"><p>Simulation</p>
+<ul><li id="njRYEfyg6"><p>un-modelled parameters</p>
+</li></ul></li>
+<li id="3ciFrzqcQ"><p></p>
+</li></ul></li></ul></li></ul></li></ul></li></ul>
     </article>
   	<div id="references">
       <ul>
