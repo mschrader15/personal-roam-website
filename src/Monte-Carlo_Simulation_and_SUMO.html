@@ -104,7 +104,10 @@ table {
 </li>
 <li id="7IAcXadve"><p>vehicle model rigour</p>
 <ul><li id="eRGOIKg1B"><p>Low-fidelity</p>
-<ul><li id="w1m01hMg1"><p></p>
+<ul><li id="w1m01hMg1"><p>SUMO PHEMlight</p>
+</li></ul></li>
+<li id="CXXFYHBI0"><p>High-fidelity </p>
+<ul><li id="0EKHaUulI"><p>Matlab</p>
 </li></ul></li></ul></li></ul></li></ul></li></ul></li>
 <li id="quqPZHmQ7"><h3>Monte-Carlo + Python</h3>
 <ul><li id="Cnfd8AvfP"><p>GitHub and the Python community comes through once again. There is already a python package dedicated to Sensitivity analysis called <a href="https://github.com/SALib/SALib">SALib</a>. </p>
@@ -116,7 +119,27 @@ table {
 <ul><li id="U3ZmVuGWM"><p>In our case we have have a couple knowns. Every other parameter is unknown and should be considered unknown aka aleatory</p>
 <ul><li id="GJVIwMy5V"><p>Parametric Inputs</p>
 <ul><li id="c0Q44HtQu"><p>car-following model</p>
+<ul><li id="MJA7LIneM"><p>According to papers like <a href="https://ieeexplore.ieee.org/document/8317836">Calibration and evaluation of car following models using real-world driving data</a>, <a href="https://arxiv.org/ftp/arxiv/papers/1811/1811.06395.pdf">Modeling Car-Following Behavior on Urban Expressways in Shanghai: A Naturalistic Driving Study</a> , the IDM driver model was chosen. Its accuracy has been replicated in recent papers. </p>
 </li>
+<li id="gQTmSXc-Q"><p>A basic overview of the model is</p>
+<ul><li id="DCHfHXDb_"><p>$a_{\alpha}(t)=a_{\max}(1-\left(\frac{v_{(X}(t)}{v_{d\mathrm{e}s}(t)})^{\delta}-(\frac{s^{\ast}(.)}{s_{\alpha}(t)})^{2}\right)$</p>
+</li>
+<li id="32NH_kl_t"><p>$s^{\ast}(v_{\alpha}(t),\ \triangle 
+v_{\alpha}(t))=s_{0}+v_{\alpha}(t)T+\frac{v_{\alpha}(t)\triangle 
+v_{\alpha}(t)}{2\sqrt{a_{\max}b_{\max}}}$</p>
+</li></ul></li>
+<li id="JI1QDkBjC"><p>Ranges of parameters are laid out in <a href="https://ieeexplore.ieee.org/document/7097035">https://ieeexplore.ieee.org/document/7097035</a>, as well as in the papers alluded to above. </p>
+</li>
+<li id="y-hpf-XFR"><p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6849526">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6849526</a> does a sensitivity analysis of IDM driver model on the NGSIM data set and finds a couple of things</p>
+<ul><li id="QIna5I8WX"><p>One, that there are several parameters that contribute minimally to the overall sensitivity of the IDM model</p>
+<ul><li id="L_B3Kuf3H"><p> minimum time headway</p>
+</li>
+<li id="ybMDxLVTF"><p>maximum acceleration</p>
+</li>
+<li id="nCzfxVVA8"><p>alpha</p>
+</li>
+<li id="q5547JUea"><p> </p>
+</li></ul></li></ul></li></ul></li>
 <li id="wDBajH1nv"><p>lane-changing model</p>
 </li></ul></li>
 <li id="ySyRCXpIo"><p>Non-parametric</p>
