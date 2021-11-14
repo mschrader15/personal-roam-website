@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Redaction';
-    src: local('Redaction'), url("../font/Redaction_20-Regular.woff2") format('woff');
+    src: local('Redaction'), url("../font/Redaction_35-Regular.woff2") format('woff');
   }
 
 :root{
@@ -313,6 +313,7 @@ img {
 .list--nav{
     margin-top: 0;
     margin-bottom: 0;
+    font-family: 'Redaction';
 }
 
 .item--nav {
